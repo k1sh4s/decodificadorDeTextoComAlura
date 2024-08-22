@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./stilos/styles.css">
+</head>
+<body>
+    <header class="cabeçalho">
+        <img class="logoAlura" src="./assets/Frame 6.png" alt="logo da Alura"> 
+        <p>
+            Decodificador de texto
+        </p>
+    </header>
+
+    <main>
+        <section class="corpo">
+            <div class="corpo__inserirTexto">
+                <textarea class="corpo__inserirTexto__input"></textarea>
+                <div class="corpo__inserirTexto__areaDosBotoes">
+                    <p class="lembrete">! Não use acentos !</p>
+                    <div class="posicaoDosBotoes">
+                        <button onclick="criptografar()" class="botaoCript">Criptografar</button>
+                        <button onclick="descriptografar()" class="botaoDescript">Descriptografar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="corpo__verTexto">
+                <img id="fotinha" class="gatinho" src="./assets/plink-cat-plink.gif" alt="gatinho">
+                <h1 class="corpo__verTexto__revelado">
+                    Nenhum texto encontrado...
+                </h1>
+                <p class="corpo__verTexto__subtitulo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button onclick="copiarTexto()" class="botaoCopiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Gerhard Eidenberger</p>
+        <p>Com Alura, em Agosto de 2024</p>
+    </footer>
+
+    <script src="decodificador.js" defer></script>
+</body>
+</html>

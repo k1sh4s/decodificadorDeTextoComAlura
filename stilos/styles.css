@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Gloria+Hallelujah&family=Libre+Barcode+39+Text&family=Mooli&family=Neonderthaw&family=Nothing+You+Could+Do&family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sedgwick+Ave&family=Shadows+Into+Light&family=Syncopate:wght@400;700&family=Teko:wght@300..700&display=swap');
+
+:root{
+    --cor-primaria: #FFF5E1;
+    --cor-secundaria: #FF6969;
+    --cor-terciaria: #0C1844;
+    --cor-hover: #FFEAE3;
+
+    --fonte-primaria: "Mooli", sans-serif;
+    --fonte-secundaria: "Teko", sans-serif;
+    --fonte-especial: "", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabeçalho{
+    padding: 3%;
+    display: flex;
+
+    font-size: 3rem;
+    font-weight: 400;
+
+}
+.logoAlura{
+    width: auto;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+
+    font-weight: 200;
+    font-family: var(--fonte-primaria);
+}
+
+.corpo{
+    padding: 3% 10%;
+    display: flex;
+    justify-content: space-around;
+    gap: 25%
+}
+
+.corpo__inserirTexto{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.corpo__inserirTexto__input{
+    padding: 5%;
+    height: 32rem;
+    width: 25rem;
+
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    border: 6px solid var(--cor-secundaria);
+    border-radius: 1rem;
+    
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+}
+
+.corpo__inserirTexto__areaDosBotoes{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.lembrete{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+.posicaoDosBotoes{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+   
+}
+.botaoCript{
+    padding: 5% 10%;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 8px;
+    text-decoration: none;
+    gap: 16px;
+
+    font-size: 1.25rem;
+    font-weight: 600;
+    
+}
+.botaoDescript{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    border: 2px solid var(--cor-terciaria);
+    padding: 5% 10%;
+   
+    border-radius: 8px;
+    text-decoration: none;
+    gap: 16px;
+
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.botaoCopiar{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    padding: 5% 10%;
+   
+    border-radius: 8px;
+    text-decoration: none;
+    gap: 16px;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    display: none;
+}
+
+
+.corpo__verTexto{
+    padding: 5% 3%;
+    border-radius: 2rem;
+
+    height: 32rem;
+    width: 25rem;
+
+    background-color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.gatinho{
+    width: 75%;
+    
+}
+.corpo__verTexto__revelado{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.corpo__verTexto__subtitulo{
+    text-align: center;
+}
+
+
+.rodape{
+    padding: 24px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--fonte-primaria);
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho{
+        padding: 10%;
+    }
+    
+    .corpo{
+        flex-direction: column;
+        padding: 5%;
+        gap: 10%;
+        
+    }
+    .corpo__inserirTexto{
+        padding: 3%;
+    }
+    .corpo__inserirTexto__input{
+        width: auto;
+        height: 38rem;
+    }
+    .corpo__verTexto{
+        width: auto;
+        height: auto;
+    }
+
+    .botaoCript{
+        padding: 3% 10%;
+        
+    }
+    .botaoDescript{
+        padding: 3% 10%;
+    }
+    .botaoCopiar{
+        padding: 1% 10%;
+    }
+
+    .gatinho{
+        width: 15%;
+    }
+}
+
+@media (max-width: 600px) {
+    .cabecalho{
+        padding: 1%;
+        font-size: 1.5rem;
+    }
+    .logoAlura{
+        height: 70px;
+        width: 120px;
+    }
+    .corpo{
+        flex-direction: column;
+        padding: 2%;
+        gap: 10%;
+        
+    }
+    .corpo__inserirTexto{
+        padding: 3%;
+    }
+    .corpo__inserirTexto__input{
+        width: auto;
+        height: 32rem;
+    }
+    .corpo__verTexto{
+        width: auto;
+        height: auto;
+    }
+
+    .lembrete{
+        font-size: 0.5rem;
+    }
+    .botaoCript{
+        padding: 1% 10%;
+        font-size: 0.85rem;
+    }
+    .botaoDescript{
+        padding: 1% 10%;
+        font-size: 0.85rem;
+    }
+    .botaoCopiar{
+        padding: 1% 10%;
+        font-size: 0.85rem;
+    }
+
+    .gatinho{
+        width: 25%;
+    }
+}
